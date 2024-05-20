@@ -3,7 +3,7 @@ Upload Document in .NET Core
 
 Controller method for Upload Files 
 
-  [HttpPost]
+        [HttpPost]
         public async Task<IActionResult> Index(List<IFormFile> files)
         {
             long size = Request.Form.Files.Sum(f => f.Length);
